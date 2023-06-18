@@ -40,7 +40,7 @@ int Method4(int count, string text)
 {
     int i = 0;
     string result = String.Empty;
-    while (i > count)
+    while (i < count)
     {
         result = result + text;
         i++
@@ -50,3 +50,20 @@ int Method4(int count, string text)
 string res = Method4(10, "WTF");
 Console.WriteLine(res);
 
+for(int i = 0; i < count; i++)
+{
+    result = result + text;
+}
+return result;
+string res = Method4(10, "WTF");
+Console.WriteLine(res);
+
+
+for(int i = 0; i < count; i++)
+{
+    for (int j = 0; j < length; j++)
+    {
+        length // Console.WriteLine($"{i} * {j} = {i * j}";)
+    }
+    Console.Writeline();
+} 
